@@ -7,26 +7,78 @@ body{
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: #FAFAFA;
-    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 4em
+} 
+
+.navbar-brand img{
+    max-height: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-.navigation {
-    text-align: center;
-    flex-grow: 1;
-    font-size: 1.5em;
-}
-
-.navigation a {
-    color: black;
-    margin: 0 15px;
-    text-decoration: none;
+.nav-item > .nav-link{
+    font-size: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .introduction{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.introduction h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.introduction p{
+    font-size: 1.75rem;
+}
+
+.introduction ul{
+    list-style-image: url('images/checkmark.svg');
+    font-size: 1.5rem;
+}
+
+.introduction li{
+    background-size: 20px;
+}
+
+.introduction img{
+    max-width: 40rem;
+}
+
+.service-section{
     text-align: center;
+    padding: 2em;
+}
+
+.services{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.75em;
+}
+
+.services ul{
+    text-align: left;
+}
+
+.services img{
+    max-height: 5em;
+}
+
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
 }
