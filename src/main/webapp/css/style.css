@@ -82,3 +82,57 @@ details[open] summary ~ * {
     0%    {opacity: 0; margin-left: -10px}
     100%  {opacity: 1; margin-left: 0px}
 }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25em;
+    padding: 40px 100px;
+    background: rgb(62, 62, 62);
+    color: white;
+}
+
+footer img{
+    max-height: 7em;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list p {
+    color: #9098A0
+}
+
+footer ul {
+    list-style: none;
+    margin: none;
+}
+
+footer a {
+    color: white;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #7a4efd;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4em;
+    font-size: 1.25em;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-details{
+    margin-left: 2em;
+    margin-right: 2em;
+}

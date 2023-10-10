@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import "../css/style.css";
 
 export default function Home(){
@@ -7,7 +7,7 @@ export default function Home(){
         <div>
             <section className="introduction">
                 <div>
-                    <h1>All Pro</h1>
+                    <h1>All Pro Electronic Service</h1>
                     <p>Full service consumer and pro audio electronics repair located in Columbus Ohio</p>
                     <ul>
                         <li> Audio Equipment</li>
@@ -74,8 +74,29 @@ export default function Home(){
                         </details>
                     </div>
                 </div>
-                <p>Don't see your repair need listed? Let's get in touch!</p>
+                <p>Don't see your repair need listed?  <button className="btn btn-secondary">Let's get in touch!</button></p>
             </section>
+            <footer>
+                <div>
+                    <img src="images/AllProLogo.png" alt="" />
+                </div>
+                <div className="footer-list">
+                    <h3>Sitemap:</h3>
+                    <Link to="/">Home</Link>
+                    <Link to="#">About</Link>
+                    <Link to="#">Rates</Link>
+                    <Link to="/Contact">Contact</Link>
+                </div>
+                <div className="footer-list">
+                <h3>Contact:</h3>
+                    <p>Phone: <a href="tel:+16143969489">614-396-9489</a></p>
+                    <p>Email: <a href="mailto: allprotronix@gmail.com">allprotronix@gmail.com</a></p>
+                </div>
+                <div className="footer-list">
+                    <h3>Address:</h3>
+                    <p>6665 Huntley Rd<br/>Suite J<br/>Columbus, OH 43229</p>
+                </div>
+            </footer>
         </div>
     )
 }
