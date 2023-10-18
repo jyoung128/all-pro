@@ -78,7 +78,7 @@ export default function Home(){
             </section>
             <footer>
                 <div>
-                    <img src="images/AllProLogo.png" alt="" />
+                    <img src="images/AllProLogoRound.png" alt="" />
                 </div>
                 <div className="footer-list">
                     <h3>Sitemap:</h3>
