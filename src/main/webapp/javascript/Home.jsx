@@ -16,7 +16,7 @@ export default function Home(){
                     </ul>
                 </div>
                 <div>
-                    <img src="images/marantz.webp" alt="audio receiver"/>
+                    <img src="images/marantz.png" alt="audio receiver"/>
                 </div>
             </section>
             <section className="service-section">
