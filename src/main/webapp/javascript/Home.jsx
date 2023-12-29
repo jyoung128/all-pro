@@ -84,7 +84,7 @@ export default function Home(){
                     <h3>Sitemap:</h3>
                     <Link to="/">Home</Link>
                     <Link to="#">About</Link>
-                    <Link to="#">Rates</Link>
+                    <Link to="#">Pricing</Link>
                     <Link to="/Contact">Contact</Link>
                 </div>
                 <div className="footer-list">
