@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 
 import Home from "./Home.jsx";
 import Contact from "./Contact.jsx";
+import Pricing from "./Pricing.jsx";
 
 import "../css/style.css";
 
@@ -29,7 +30,7 @@ function Layout() {
                                 <a className="nav-link" href="#">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
+                                <Link className="nav-link" to="/Pricing">Pricing</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/Contact">Contact</Link>
@@ -54,6 +55,7 @@ function Main() {
                     >
                         <Route index element={<Home />} />
                         <Route path="Contact" element={<Contact />} />
+                        <Route path="Pricing" element={<Pricing />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

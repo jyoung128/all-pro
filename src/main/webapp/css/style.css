@@ -6,6 +6,34 @@ body{
     font-family: 'Teko', sans-serif;
 }
 
+.pricing-tables{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 60%;
+    margin-bottom: 4em;
+}
+
+.pricing-tables table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-tables td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 1.25em;
+}
+
+.pricing-tables p{
+    font-size: 1.5em;
+    margin-top: 2em;
+    text-align: center;
+}
+
 .header {
     margin-bottom: 4em
 } 
