@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+import { Nav, Navbar} from 'react-bootstrap';
 
 import Home from "./Home.jsx";
 import Contact from "./Contact.jsx";
@@ -14,30 +15,31 @@ function Layout() {
         return (
         <>
             <header className="header">
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand" href="#">
+                <Navbar sticky="top" collapseOnSelect expand="lg" bg="light" id="navbar" className="navbar navbar-expand-lg navbar-light bg-light">
+                    <Navbar.Brand>
                         <img src="images/AllProLogoRound.png"/>
-                    </a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mr-auto">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/Pricing">Pricing</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/Contact">Contact</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    <Navbar.Collapse>
+                        <Nav className="me-auto">
+                            <Nav.Item>
+                                <Nav.Link eventKey="1" as={Link} to="/">
+                                    Home
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="2" as={Link} to="/Pricing">
+                                    Pricing
+                                </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="3" as={Link} to="/Contact">
+                                    Contact
+                                </Nav.Link>
+                            </Nav.Item>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
             </header>
             <Outlet />
         </>
