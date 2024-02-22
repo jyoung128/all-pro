@@ -11,30 +11,6 @@ export default function Contact(){
     return (
         <>
             <div className="contact-form">
-                <Card className={"border border-dark bg-light text-black"} style={{width : '25rem'}}>
-                    <Card.Header>Contact Us</Card.Header>
-                    <Form>
-                        <Card.Body>
-                            <Form.Group className="mb-3" controlId="formBasicName">
-                                <Form.Label>Name</Form.Label>
-                                <Form.Control size="lg" type="text" placeholder="Enter name" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control size="lg" type="email" placeholder="Enter email" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicSubject">
-                                <Form.Label>Subject</Form.Label>
-                                <Form.Control size="lg" type="text" placeholder="Subject" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicMessage">
-                            <Form.Label>Message</Form.Label>
-                                <Form.Control size="lg" as="textarea" rows={5} placeholder="Message" />
-                            </Form.Group>
-                            <Button variant="primary" type="submit">Submit</Button>
-                        </Card.Body>
-                    </Form>
-                </Card>
                 <div>
                     <h2>How to find us:</h2>
                     <div className="contact-info">
@@ -55,7 +31,7 @@ export default function Contact(){
                     <h3>Sitemap:</h3>
                     <Link to="/">Home</Link>
                     <Link to="#">About</Link>
-                    <Link to="#">Rates</Link>
+                    <Link to="/Pricing">Pricing</Link>
                     <Link to="/Contact">Contact</Link>
                 </div>
                 <div className="footer-list">

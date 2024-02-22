@@ -50,6 +50,10 @@ body{
     margin-right: 0.5em;
 }
 
+.intro-image{
+    max-width: 40em;
+}
+
 .introduction{
     display: flex; 
     justify-content: space-around;
@@ -112,9 +116,13 @@ details[open] summary ~ * {
 }
 
 footer {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
     display: flex;
     justify-content: space-around;
-    font-size: 1.25em;
+    font-size: 1em;
     padding: 40px 100px;
     background: rgb(62, 62, 62);
     color: white;
@@ -163,4 +171,32 @@ footer a:hover {
 .contact-details{
     margin-left: 2em;
     margin-right: 2em;
+}
+
+@media only screen and (max-width: 900px){
+    footer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .introduction{
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .services{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.75em;
+        flex-direction: column;
+    }
 }

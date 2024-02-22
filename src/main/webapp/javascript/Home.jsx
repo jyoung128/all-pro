@@ -15,7 +15,7 @@ export default function Home(){
                         <li> Service Calls</li>
                     </ul>
                 </div>
-                <div>
+                <div className="intro-image">
                     <img src="images/marantz.png" alt="audio receiver"/>
                 </div>
             </section>
@@ -74,17 +74,17 @@ export default function Home(){
                         </details>
                     </div>
                 </div>
-                <p>Don't see your repair need listed?  <button className="btn btn-secondary">Let's get in touch!</button></p>
+                <p>Don't see your repair need listed?  <Link to="/Contact"><button className="btn btn-secondary">Let's get in touch!</button></Link></p>
             </section>
             <footer>
-                <div>
+                <div className="footer-brand">
                     <img src="images/AllProLogoRound.png" alt="" />
                 </div>
                 <div className="footer-list">
                     <h3>Sitemap:</h3>
                     <Link to="/">Home</Link>
                     <Link to="#">About</Link>
-                    <Link to="#">Pricing</Link>
+                    <Link to="/Pricing">Pricing</Link>
                     <Link to="/Contact">Contact</Link>
                 </div>
                 <div className="footer-list">
